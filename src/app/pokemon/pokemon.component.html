@@ -1,0 +1,13 @@
+<pokemon-top-bar></pokemon-top-bar>
+
+  <div class="Search-container">
+         <input type="text" placeholder="Buscar Pokemon" [(ngModel)]="query">
+  <img src="../../assets/img-cabecalho.png"alt="pokemonImg">
+</div>
+<div class="line"></div>
+
+<div class="grid" *ngIf="pokemons">
+  <div class="column" *ngFor="let pokemon of pokemons.results | search: query" [routerLink]="['/detail', pokemon.name]">
+    <p style="margin-top: 40px;">{{ pokemon.name }}</p>
+  </div>
+</div>

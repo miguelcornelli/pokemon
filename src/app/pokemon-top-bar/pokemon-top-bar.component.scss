@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+
+.navbar-poke{
+    background-color:#ef5350;
+}
+.navbar-logo{
+    width:"30";
+    height:"30";
+}
+.navbar-title{
+    color: white;
+    font-weight: bold;
+}

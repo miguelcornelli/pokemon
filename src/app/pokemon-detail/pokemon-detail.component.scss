@@ -1,0 +1,120 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.pokemon-view {
+
+  @media screen and(max-width: $layout-xs) {
+    .add-detail {
+      display: none;
+    }
+  }
+
+  @media screen and(min-width: $layout-xs) {
+    .add-detail {
+      @include add-icon-style;
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+
+  .button{
+    width: 100px;
+    height: 60px;
+    background: #ef5350;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+.button:hover{
+    filter: brightness(90%);
+}
+  .container-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+
+    .style-input{
+      width: 500px;
+      height: 60px;
+      color: #333;
+      border: 1px solid #dcdce6;
+      border-radius: 8px;
+      padding: 0 24px;
+
+    }
+  }
+
+  .section {
+    clear: both;
+    margin: 0px;
+    grid-gap: 1vw;
+    padding: 1vw;
+  }
+
+  .col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.8%;
+  }
+
+  .col:first-child {
+    margin-left: 50;
+  }
+
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+
+  .group:after {
+    clear: both;
+  }
+
+  .group {
+    zoom: 1;
+  }
+
+  .span_2_of_2 {
+    width: 100%;
+  }
+
+  .span_1_of_2 {
+    width: 30%;
+  }
+
+  .span_1_of_2:first-child {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $layout-xs) {
+
+    .col {
+      margin: 1% 0 1% 0%;
+    }
+  }
+
+  @media screen and (max-width: $layout-xs) {
+
+    .span_2_of_2,
+    .span_1_of_2 {
+      width: 100%;
+    }
+
+    .span_1_of_2:first-child {
+      width: 100%;
+    }
+
+    .input-form {
+      width: 100%;
+    }
+  }
+}

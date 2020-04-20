@@ -1,0 +1,17 @@
+<pokemon-top-bar></pokemon-top-bar>
+<div class="pokemon-view">
+    <div class="container-form">
+      <form (submit)="submitPokemon($event)">
+        <input class="style-input" type="text" placeholder="Encontre seu pokemon pelo nome ou ID" name="id">
+        <button class="button" type = "submit"> Buscar </button>
+      </form>
+    </div>
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <pokemon-side [pokemon]="pokemon"></pokemon-side>
+      </div>
+      <div class="col span_1_of_2">
+        <pokemon-side-bar [pokemon]="pokemon"></pokemon-side-bar>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,79 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+input, button{
+    font: 400 18px Roboto, sans-serif;
+}
+
+input {
+    width: 80%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+.line {
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+    margin-bottom: 30px;  
+  }
+
+.Search-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-auto-rows: 120px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+  }
+
+  .column {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    box-shadow: 0px 6px 10px 1px rgba(36, 37, 38, 0.08);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .button{
+    width: 150px;
+    height: 60px;
+    background: #ef5350;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+.button:hover{
+    filter: brigh
+}
